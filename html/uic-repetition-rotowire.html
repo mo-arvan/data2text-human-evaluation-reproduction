@@ -1,0 +1,729 @@
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<div id="hit-container">
+    <section class="container" id="Other"
+        style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+        <div class="row col-xs-12 col-md-12" style="margin:auto">
+            <!-- Instructions -->
+            <div class="question-container" id="instructions-container">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><strong>General Instructions</strong></div>
+                    <div class="panel-body">
+
+                        <ul>
+
+                            <li><span style="color: rgb(0, 0, 0);">We invite you to take part in our study on
+                                    automatic summarization (see description below).</span></li><br>
+
+                            <li><span style="color: rgb(0, 0, 0);">Entry requirements: Attempt HITs if you are a
+                                    <strong>native speaker of English&nbsp;</strong>or a <strong>near-native
+                                        speaker&nbsp;</strong>who can comfortably comprehend summaries of NBA
+                                    basketball games written in English.</span></li><br>
+
+                            <li><span style="color: rgb(0, 0, 0);">Expected duration: <strong>1
+                                        minute</strong>.</span></li><br>
+
+                            <li><span style="color: rgb(0, 0, 0);">This study has been approved by University of
+                                    Illinois at Chicago's Institutional Review Board (IRB),
+                                    You must review and accept the consent terms before you can participate in this
+                                    study.</span></li><br>
+
+                        </ul>
+                        <!--<ul>
+	<li><span style="color: rgb(0, 0, 0);">Attempt HITs if you are a <strong>native speaker of English&nbsp;</strong>or a <strong>near-native speaker&nbsp;</strong>who can comfortably comprehend &nbsp;summary of NBA basketball games written in English.</span></li>
+	<li><span style="color: rgb(0, 0, 0);">We are happy to <strong>receive feedback</strong> and improve this job accordingly. Feel free to send your comments to: <span data-hovercard-id="R.Puduppully@sms.ed.ac.uk">r.puduppully</span> [at] sms <span style="color: rgb(0, 0, 0);">[dot]</span> ed [dot] ac [dot] uk.</span></li>
+	<li><span style="color: rgb(0, 0, 0);">Your responses are <strong>confidential</strong>. Any publications based on these will not include your specific responses, but rather aggregate information from many individuals. We will not ask any information that can be used to identify who you are.</span></li>
+</ul>-->
+                        <h2><span style="color: rgb(0, 0, 0);">Evaluate Sports Summaries of (NBA) basketball
+                                games</span></h2>
+
+                        <p><span style="color: rgb(0, 0, 0);">Your task it to read two short texts which have been
+                                produced
+                                by different automatic systems. These systems typically take a large table as input
+                                which contains statistics
+                                of a basketball game &nbsp;and &nbsp;produce a document which &nbsp;summarizes the table
+                                in natural langauge
+                                (e.g., talks about what happened in the game, who scored, who won and so
+                                on).&nbsp;</span>
+
+                            <span style="color: rgb(0, 0, 0);">
+                                <span style="color: rgb(0, 0, 0);">
+                                    <span style="color: rgb(0, 0, 0);">Please read the two summaries carefully and judge
+                                        how good each is according to the following
+                                        &nbsp;criterion:</span>
+                                </span>
+                            </span>
+                        </p>
+
+                        <ul>
+                            <li><span style="color: rgb(0, 0, 0);"><strong>Avoid repetition:&nbsp;</strong> Which
+                                    summary is better at avoiding unnecessary repetition?
+                                    Unnecessary repetition might take the
+                                    form
+                                    of
+                                    whole
+                                    sentences
+                                    that are repeated, or repeated facts, or the
+                                    repeated use of a phrase </span>
+                            </li>
+                        </ul>
+
+                        <p><span style="color: rgb(0, 0, 0);">
+                                This task contains validation
+                                instances (for which answers are known) that
+                                will be used for an automatic
+                                quality assessment of submissions.
+                                Therefore, please <strong>read the
+                                    summaries carefully </strong>. </span>
+                        </p>
+                        <h3>Example Summaries</h3>
+
+
+                        (In this example, we show two summaries to give you an idea of how to judge them based on
+                        Avoiding repetition.)<br />
+                        <br />
+
+                        <b>A</b>:
+                        The Golden State Warriors defeated the Los Angeles Clippers , 133 - 120 , at Staples Center on
+                        Wednesday .
+                        The Warriors ( 43 - 7 ) came into this game as a sizable favorite and they showed why in this
+                        clincher .
+                        Golden State ( 31 - 19 ) came into this game as a huge favorite and they showed some resiliency
+                        here with this win .
+                        <font color="red"><u> Blake Griffin was the high - point man , as he tallied 31 points (i)</u>
+                        </font> ,
+                        eight rebounds , two assists , three steals
+                        and one block on 10 - of - 19 shooting . Klay Thompson finished with 21 points , seven rebounds
+                        and two assists .
+                        <font color="red"><u> Austin Rivers was the only other starter in double figures , as he tallied
+                                18 points , four rebounds and six
+                                assists on 7 - of - 15 shooting .(ii)</u> </font>
+                        <font color="red"><u> Jamal Crawford was huge off the bench , providing 21 points
+                                (iii)</u> </font> on 7 - of - 11
+                        shooting off the bench . <font color="red"><u> Blake Griffin led the team in scoring , dropping
+                                31 points on 10 - of - 19 shooting .(i)
+                            </u> </font>
+                        Kevin Durant finished with 26 points , eight rebounds and 10 assists . <font color="red"><u>
+                                Jamal Crawford was huge off the bench ,
+                                as he provided 21 points (iii)</u> </font> and four assists . DeAndre Jordan recorded a
+                        double - double , totaling 13 points and eight
+                        rebounds . <font color="red"><u>Jamal Crawford was huge off the bench , dropping 21 points on 7
+                                - of - 11 shooting (iii)</u> </font>, including 5 - of -
+                        8 from three - point range . <font color="red"><u> Austin Rivers led the Clippers in scoring
+                                with 18 points on 7 - of - 15 from the field .
+                                (ii)</u> </font>
+
+                        <br />
+                        <br />
+                        <b>B</b>:
+                        The Golden State Warriors ( 43 - 7 ) defeated the Los Angeles Clippers ( 31 - 19 ) 133 - 120 on
+                        Saturday . The
+                        Warriors came into this game as one of the best defenses in the NBA this season , but they were
+                        able to prevail
+                        with a huge road win . In fact , Golden State shot 53 percent from the field and 41 percent from
+                        three - point range .
+                        The Warriors also dominated the assist - to - turnover ratio , recording 38 assists to 11
+                        turnovers , while
+                        the Clippers committed 15 turnovers to just 15 assists . The Warriors ( 31 - 19 ) had to play
+                        this game extremely
+                        shorthanded and they did n't disappoint . Stephen Curry carried the load , as he tallied 29
+                        points , three rebounds
+                        and 11 assists on 11 - of - 23 shooting . Kevin Durant was the only other starter in double
+                        figures , as he dropped
+                        26 points on 8 - of - 18 shooting . Klay Thompson finished with 21 points and seven rebounds .
+                        Draymond Green
+                        was the only other player in double figures , as he totaled 10 points , seven rebounds and two
+                        assists . The
+                        Clippers ( 31 - 19 ) were led by Blake Griffin , who tallied 31 points , eight rebounds and
+                        three steals in the defeat .
+                        Jamal Crawford also had a nice game off the bench , as he scored 21 points off the bench . On
+                        deck for Golden
+                        State is a road matchup against the Los Angeles Lakers on Thursday .
+                        <br />
+
+
+                        <h3>Answers</h3>
+
+                        <p><strong>Avoid Repetition</strong></p>
+                        Best: B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Worst: A
+
+
+                        <h3>Analysis</h3>
+
+                        <b>Avoiding repetition.</b> Summary <b>B</b> is the best as Summary <b>A</b> contains
+                        <b>repetitive information ↓</b> such as phrases <b>(i)</b>, <b>(ii)</b>
+                        and <b>(iii)</b>.
+                        </br>
+
+
+                    </div>
+                </div>
+
+                <span class="init-display-hidden" id="keybinding-info">Press next to review the Research Information and
+                    Consent documents.</span>
+                <div class="next-button-container"><input class="next-button" id="next-intro" onclick="next(1)"
+                        type="button" value="Next ▶" /></div>
+            </div>
+
+            <!-- END OF Instructions -->
+
+            <!-- Consent -->
+
+            <div class="init-hidden question-container" id="question1">
+
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Research Information and Consent</div>
+                    <div class="panel-body">
+
+                        <p><strong>University of Illinois at Chicago (UIC)</strong></p>
+                        <p><strong>Research Information and Consent for Participation in Social, Behavioral, or
+                                Educational Research</strong></p>
+                        <p>Reproducibility of Data-to-text Generation with Macro Planning</p>
+                        <p><strong>Principal Investigator/Researcher Name and Title:</strong> Natalie Parde</p>
+                        <p><strong>Department and Institution:</strong> Department of Computer Science, University of
+                            Illinois at Chicago</p>
+                        <p><strong>Address and Contact Information:</strong> <em>(312) 355-1310</em></p>
+                        <p><strong>Sponsor:</strong> EPSRC</p>
+                        <p><strong>About this research study</strong></p>
+                        <p>You are being asked to participate in a research study. Research studies answer important
+                            questions that might help change or improve the way we do things in the future.</p>
+                        <p><strong>Taking part in this study is voluntary</strong></p>
+                        <p>Your participation in this research study is voluntary. You may choose to not take part in
+                            this study or may choose to leave the study at any time. Deciding not to participate, or
+                            deciding to leave the study later, will not result in any penalty or loss of benefits to
+                            which you are entitled and will not affect your relationship with the University of Illinois
+                            Hospital and Health Sciences System (UI Health) and/or University of Illinois at Chicago
+                            (UIC).</p>
+                        <p>This consent form will give you information about the research study to help you decide
+                            whether you want to participate. Please read this form and ask any questions you have before
+                            agreeing to be in the study.</p>
+                        <p>You are being asked to participate in this research study because you are an adult.</p>
+                        <p><strong>Important Information</strong></p>
+                        <p>This information gives you an overview of the research. More information about these topics
+                            may be found in the pages that follow.</p>
+                        <p><strong>WHY IS THIS STUDY BEING DONE?</strong></p>
+                        <blockquote>
+                            <p>We aim to reproduce the result of human evaluation of an NLP pipeline for data-to-text
+                                generation</p>
+                        </blockquote>
+                        <p><strong>WHAT WILL I BE ASKED TO DO DURING THE STUDY?</strong></p>
+                        <blockquote>
+                            <p>The participants will be ask to evaluate sports summaries of (NBA) basketball games. To
+                                do so, they need to read two short texts which have been produced by different automatic
+                                systems. These systems typically take a large table as input which contains statistics
+                                of a basketball game and produce a document which summarizes the table in natural
+                                language (e.g., talks about what happened in the game, who scored, who won and so on).
+                                We are interested in evaluation the system outputs based on three different categories:
+                            </p>
+                            <p><strong>Avoid repetition:</strong> Which summary is better at avoiding unnecessary
+                                repetition? Unnecessary repetition might take the form of whole sentences that are
+                                repeated, or repeated facts, or the repeated use of a phrase </p>
+                            <p><strong>Grammaticality</strong> : Are the sentences grammatical and well-formed? The
+                                summary sentences should be grammatically correct. You should not rate the document as
+                                whole but rather whether the sentences could be written by a native speaker or by
+                                someone who is a learner and makes mistakes. Choose the more grammatical summary. </p>
+                            <p><strong>Coherence</strong> : How coherent is the summary? How natural is the ordering of
+                                the facts? The summary should be well structured and well organized and have a natural
+                                ordering of the facts.</p>
+                        </blockquote>
+                        <p><strong>HOW MUCH TIME WILL I SPEND ON THE STUDY?</strong></p>
+                        <blockquote>
+                            <p>Each task takes a minute to complete.</p>
+                        </blockquote>
+                        <p><strong>ARE THERE ANY BENEFITS TO TAKING PART IN THE STUDY?</strong></p>
+                        <blockquote>
+                            <p>There are no direct benefits to the subjects.</p>
+                        </blockquote>
+                        <p><strong>WHAT ARE THE MAIN RISKS OF THE STUDY?</strong> </p>
+                        <blockquote>
+                            <p>The primary risks presented by this research study are breaches of privacy (others
+                                outside of the study may find out you are a subject) and/or confidentiality (others
+                                outside of the study may find out what you did, said, or information that was collected
+                                about you during the study).
+                                <em>Participants are only required to rank two responses, we do not store any additional
+                                    information to avoid future privacy concerns. Additionally, only the aggregated
+                                    results will be used in a scientific publication.</em>
+                            </p>
+                        </blockquote>
+                        <p><strong>DO I HAVE OTHER OPTIONS BESIDES TAKING PART IN THE STUDY?</strong> </p>
+                        <blockquote>
+                            <p>You have the option to decide not to take part at all or you may stop your participation
+                                at any time without any consequences. |</p>
+                        </blockquote>
+                        <p><strong>QUESTIONS ABOUT THE STUDY?</strong></p>
+                        <blockquote>
+                            <p>For questions, concerns, or complaints about the study, please contact Natalie Parde at
+                                (312) 355-1310 or email at parde@uic.edu.
+                                If you have questions about your rights as a study subject; including questions,
+                                concerns, complaints, or if you feel you have not been treated according to the
+                                description in this form; or to offer input you may call the UIC Office for the
+                                Protection of Research Subjects (OPRS) at 312-996-1711 or 1-866-789-6215 (toll-free) or
+                                e-mail OPRS at <a href="mailto:uicirb@uic.edu">uicirb@uic.edu</a>. |</p>
+                        </blockquote>
+                        <p><strong>Please review the rest of this document for details about these topics and additional
+                                things you should know before making a decision about whether to participate in this
+                                research. Please also feel free to ask the researchers questions at any time.</strong>
+                        </p>
+                        <p><strong>What will happen with my information used in this study?</strong></p>
+                        <blockquote>
+                            <p>Your identifiable private information collected for this study will not be used for
+                                future research studies or shared with other researchers in the future.</p>
+                        </blockquote>
+                        <p><strong>What about privacy and confidentiality?</strong></p>
+                        <blockquote>
+                            <p>Efforts will be made to keep your personal information confidential; however, we cannot
+                                guarantee absolute confidentiality. In general, information about you, or provided by
+                                you, during the research study, will not be disclosed to others without your written
+                                permission. However, laws and state university rules might require us to tell certain
+                                people about you. For example, study information which identifies you and the consent
+                                form signed by you may be looked at and/or copied for quality assurance and data
+                                analysis by:</p>
+                            <ul>
+                                <li>Representatives of theuniversity committee and office that reviews and approves
+                                    research studies, the Institutional Review Board (IRB) and Office for the <a
+                                        href="http://illinois.edu/ds/detail?departmentId=illinois.eduNE344&amp;search_type=all&amp;skinId=0&amp;sub=">Protection
+                                        of Research Subject</a>s.</li>
+                                <li>Other representatives of the State and University responsible for ethical,
+                                    regulatory, or financial oversight of research.</li>
+                                <li>Government Regulatory Agencies, such as the Office for Human Research Protections
+                                    (OHRP).</li>
+                                <li>The sponsor of the research study, EPSRC</li>
+                            </ul>
+                            <p>A possible risk of the study is that your participation in the study or information about
+                                you might become known to individuals outside the study. Your answers will bestored on a
+                                password protected computer to prevent access by unauthorized personnel.</p>
+                            <p>Your individual data will be stripped of all direct and indirect identifiersafter
+                                collection of the data<em>.</em></p>
+                            <p>When the results of the study are published or discussed in conferences, no one will know
+                                that you were in the study.</p>
+                        </blockquote>
+                        <p><strong>What are the costs for participating in this research?</strong></p>
+                        <blockquote>
+                            <p>There are no costs to you for participating in this research.</p>
+                        </blockquote>
+                        <p><strong>Will I be reimbursed for any of my expenses or paid for my participation in this
+                                research?</strong></p>
+                        <blockquote>
+                            <p>You will receive $0.22 per task once you finish your work.</p>
+                        </blockquote>
+                        <p><strong>Can I withdraw or be removed from the study?</strong></p>
+                        <blockquote>
+                            <p>If you decide to participate, you have the right to withdraw your consent and leave the
+                                study at any time without penalty.</p>
+                            <p>To do so, send an email to parde@uic.edu indicating your request.</p>
+                            <p>The researchers [and/or founder] also have the right to stop your participation in this
+                                study without your consent if they believe it is in your best interests.</p>
+                        </blockquote>
+                        <p><strong>Consent of Subject</strong></p>
+                        <p>I have read the above information. I have been given an opportunity to contact the
+                            researchers and ask questions, and my questions have been answered to my satisfaction. I
+                            agree to participate in this research.</p>
+                        <p><strong>PLEASE PRINT OUT A COPY OF THIS DOCUMENT FOR YOUR RECORDS.</strong></p>
+
+                    </div>
+                </div>
+
+                Press "Click to begin the HIT" to continue.
+
+                <span class="init-display-hidden" id="keybinding-info"></span>
+                <div class="next-button-container"><input class="next-button" id="next-intro" onclick="next(2)"
+                        type="button" value="Next ▶" /></div>
+
+            </div>
+            <!-- END OF Consent -->
+
+
+
+        </div>
+
+        <div class="init-hidden question-container" id="question2">
+
+            <h3>Summaries</h3>
+
+
+            <h4>System Summaries</h4>
+            <b>A</b>: ${sum1}<br />
+            <br />
+            <b>B</b>: ${sum2}
+
+            <h3>Ranking Criteria</h3>
+            <ol>
+                <li><strong>Avoid repetition:&nbsp;</strong>Which summary is better at avoiding unnecessary repetition?
+                    Unnecessary repetition might take the
+                    form
+                    of
+                    whole
+                    sentences
+                    that are repeated, or repeated facts,
+                    or the repeated use of a phrase </li>
+            </ol>
+
+
+            <h3>Answers</h3>
+
+            Best: <input class="form-control" id="best_redun" name="best_redun" required="" size="1" type="text" />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Worst: <input class="form-control" id="worst_redun" name="worst_redun"
+                required="" size="1" type="text" />
+            <p>&nbsp;</p>
+
+            <div class="next-button-container"><input class="next-button" id="next-summary1" onclick="verify()"
+                    type="button" value="Finish ▶" /></div>
+
+            <p>&nbsp;</p>
+        </div>
+        &nbsp;
+
+        <div class="init-hidden question-container" id="question3">
+            <div id="feedback-container">
+                <p class="info">You have finished the HIT. Thank you! Don't forget to submit the HIT to complete the
+                    task.</p>
+
+                <p><span class="info">Optional</span> Are you a native speaker of English? <label for="englishY"><input
+                            id="englishY" type="radio" name="english" value="1" /> Yes</label> <label
+                        for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
+                <p>(Your answer to this question will not affect acceptance of the HIT or your payment.)</p>
+
+
+                <p><span class="info">Optional</span> Please use this space to provide feedback on the task or ask any
+                    questions. This will not affect acceptance of the HIT or your payment.</p>
+                <textarea id="feedback" name="feedback"></textarea>
+            </div>
+        </div>
+</div>
+<textarea class="init-hidden" id="clicks" name="clicks"></textarea><!-- End Content Body --></section>
+</div>
+<style type="text/css">
+    fieldset {
+        padding: 10px;
+        background: #fbfbfb;
+        border-radius: 5px;
+        /*margin-right: 5px;*/
+        /*margin-left: 5px;*/
+        margin-bottom: 5px;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+        margin-right: 10px;
+        margin-left: 10px;
+        transform: scale(1.5);
+    }
+
+    input[type=text] {
+        display: inline;
+        width: auto;
+    }
+
+    label {
+        font-weight: normal;
+        padding: 10px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    td {
+        width: 50%;
+        vertical-align: top;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+
+    table {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    section {
+        width: 100% !important;
+    }
+
+    .next-button {
+        color: white;
+        background-color: #428bca;
+        border-color: #428bca;
+        font-weight: bold;
+    }
+
+    .ds-title {
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    .ds-question {
+        font-weight: normal;
+    }
+
+    .question-title {
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+
+    .init-hidden {
+        display: none;
+    }
+
+    .info {
+        font-weight: bold;
+    }
+
+    .emph {
+        font-weight: bold;
+        color: #E3319D;
+    }
+
+    .query {
+        font-family: 'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+        font-size: 120%;
+        text-decoration: underline;
+    }
+
+    .summary-question {
+        font-weight: normal;
+        padding: 10px;
+        background: #F0FFF0;
+        border-radius: 5px;
+    }
+
+    .summary-container {
+        text-align: center;
+    }
+
+    .summary-img {
+        width: 90%;
+        max-width: 1024px;
+    }
+
+    .next-button-container {
+        /*text-align:right;*/
+        display: inline-block;
+    }
+
+    .init-display-hidden {
+        visibility: hidden;
+    }
+
+    .hint {
+        display: none;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .hint-container {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .decorated-hint-container {
+        border: 1px CadetBlue solid;
+        border-radius: 5px;
+    }
+
+    .hint-header {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .question-container {
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    .task-instruction-container {
+        background-color: AliceBlue;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+
+    .definition-container {
+        background-color: LightYellow;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+
+    .exception {
+        font-style: italic;
+    }
+
+    .it {
+        font-style: italic;
+    }
+
+    .domain-instructions {
+        background-color: whitesmoke;
+    }
+
+    .conceptual-instructions {
+        background-color: mintcream;
+    }
+
+    #hit-container {
+        font-size: 120%;
+    }
+
+    #feedback {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+        height: 100px;
+    }
+
+    #feedback-container {
+        text-align: center;
+    }
+</style>
+<script>
+
+    function verify() {
+
+        if (!(document.getElementById("best_redun").value == 'A' ||
+            document.getElementById("best_redun").value == 'B') ||
+            !(document.getElementById("worst_redun").value == 'A' ||
+                document.getElementById("worst_redun").value == 'B') ||
+            (document.getElementById("best_redun").value == document.getElementById("worst_redun").value)
+        ) {
+            alert('Check that you have completed the criterion with either A or B and that you selected different letters for each Best and Worst!');
+            next(2);
+        } else {
+            next(3);
+            enable('submitButton');
+        }
+    }
+
+    // hide the previous section, show the next
+    function next(n) {
+        if (n == 1) {
+            document.getElementById("instructions-container").style.display = "none";
+        } else {
+            document.getElementById("question" + (parseInt(n) - 1)).style.display = "none";
+        }
+        document.getElementById("question" + n).style.display = "block";
+        window.scrollTo(0, 0);
+    }
+
+    // we only want to allow the Worker to proceed to the next question if they've answered the question
+    // the radio buttons were once checkboxes, which is why we check the case of whether they got unchecked
+    function check_enable(best, worst, next_button_name) {
+        var best_ans = document.getElementsByName(best);
+        var worst_ans = document.getElementsByName(worst);
+        if (best_ans.value == "" || worst_ans.value == "") {
+            document.getElementById(next_button_name).style.visibility = "hidden";
+        }
+        else {
+            document.getElementById(next_button_name).style.visibility = "visible";
+        }
+    }
+
+    function enable(name) {
+        document.getElementById(name).style.visibility = "visible";
+        document.getElementById(name).disabled = false;
+    }
+
+    /* Dear reader, I wanted to use jquery but for various reasons decided it would be best not to.
+     * As it is, this has no external dependencies to worry about but the images. */
+
+    //thanks jquery https://stackoverflow.com/a/38873788
+    function isVisible(e) {
+        return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+    }
+
+    // thank you https://www.w3schools.com/howto/howto_js_toggle_class.asp
+    function toggleClass(elt, toggleClass) {
+        if (elt.classList) {
+            elt.classList.toggle(toggleClass);
+        } else {
+            // For IE9
+            var classes = element.className.split(" ");
+            var i = classes.indexOf(toggleClass);
+
+            if (i >= 0) {
+                classes.splice(i, 1);
+            } else {
+                classes.push(toggleClass);
+                element.className = classes.join(" ");
+            }
+        }
+    }
+
+    // toggle visibility of question and summary interpretation hint on "show instructions and definition" button click
+    function toggleHint(elt_id, button_id) {
+        var hint_elt = document.getElementById(elt_id);
+        var button_elt = document.getElementById(button_id);
+        if (isVisible(hint_elt)) {
+            hint_elt.style.display = "none";
+            button_elt.innerHTML = "Show Definition";
+        } else {
+            hint_elt.style.display = "block";
+            button_elt.innerHTML = "Hide Definition";
+        }
+        toggleClass(button_elt.parentElement, "decorated-hint-container");
+    }
+
+    window.onload = function () {
+
+        // hide AMT's HIT submission button; we'll show it when the Worker has answered all the questions
+        if (document.getElementById("submitButton") != null) {
+            document.getElementById("submitButton").style.visibility = "hidden";
+            document.getElementById("submitButton").disabled = true;
+        }
+
+        // hide the "click to begin" (next-intro) button until the Worker has accepted the HIT
+        // thank you https://stackoverflow.com/questions/32403303/mturk-hide-an-object-in-preview-show-when-you-accept-a-hit-url-changes-in-pre
+        var assignmentIdRegex = "[\?&]assignmentId=([^&#]*)";
+        var assignIds = (new RegExp(assignmentIdRegex)).exec(window.location.href);
+
+        // if we're in the requester view or if we're a worker and have actually accepted the HIT, next-intro should be visible
+        if ((assignIds == null) || !(assignIds[1] == "ASSIGNMENT_ID_NOT_AVAILABLE") || window.location.href.includes("/create/projects/")) {
+            document.getElementById("next-intro").style.visibility = "visible";
+            if (!(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))) {
+                document.getElementById("keybinding-info").style.visibility = "visible";
+            }
+        }
+
+        // prepare click logging
+        var curr_time = new Date(new Date().getTime());
+        var clicks = {};
+        clicks["user_agent"] = navigator.userAgent;
+        clicks["clicks"] = []
+        clicks["start_time"] = curr_time.toString();
+
+        document.onclick = function logClicks(e) {
+            var id_tag = "no_id";
+            if ((typeof e.target.id != 'undefined') && (e.target.id.length > 0)) {
+                id_tag = e.target.id;
+            }
+            var new_time = new Date(new Date().getTime());
+            if (new_time > curr_time) {
+                curr_time = new_time;
+            }
+            var click = {
+                "click_x": e.pageX,
+                "click_y": e.pageY,
+                "nodeName": e.target.nodeName,
+                "id_tag": id_tag,
+                "time": curr_time.toString()
+            };
+            clicks["clicks"].push(click);
+            document.getElementById("clicks").value = JSON.stringify(clicks);
+        }
+    }
+
+</script>
