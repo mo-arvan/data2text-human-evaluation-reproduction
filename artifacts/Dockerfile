@@ -10,5 +10,7 @@ RUN pip install --upgrade pip && \
     pip install krippendorff && \
     pip install scikit-learn && \
     pip install pingouin && \
-    pip install simpledorff
+    pip install simpledorff && \
+    pip install seaborn && \
+    pip install openpyxl
 
