@@ -2,7 +2,6 @@ import krippendorff
 import pandas as pd
 
 
-
 def df_to_experiment_annotator_table(df, experiment_col, annotator_col, class_col):
     return df.pivot_table(
         index=annotator_col, columns=experiment_col, values=class_col, aggfunc="first"
@@ -21,13 +20,14 @@ def calculate_inter_annotator_agreement(responses_dir):
 
         responses_df["response"] = responses_df[column_name].apply(lambda x: label_to_code[x])
 
-        rr = responses_df[['Input.code', "WorkerId", "response"]]
-        rrr = rr.pivot_table(index="WorkerId", columns="Input.code", values="response", aggfunc="first")
-        rrr = rrr.reset_index(drop=True)
+        annotation_matrix = (
+            responses_df[['Input.code', "WorkerId", "response"]].pivot_table(index="WorkerId", columns="Input.code",
+                                                                             values="response",
+                                                                             aggfunc="first")
+            .reset_index(drop=True))
 
-        alpha_2 = krippendorff.alpha(rrr.to_numpy(), level_of_measurement='nominal')
-        print(f"Krippendorff's Alpha for {responses_dir.split('/')[-1] + file_name}: {alpha_2:.3f}")
-
+        alpha = krippendorff.alpha(annotation_matrix.to_numpy(), level_of_measurement='nominal')
+        print(f"Krippendorff's Alpha for {responses_dir.split('/')[-2] + ' ' + file_name}: {alpha:.3f}")
 
 
 if __name__ == '__main__':
