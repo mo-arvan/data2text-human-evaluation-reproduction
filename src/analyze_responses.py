@@ -281,6 +281,20 @@ def report_stats(df):
 def report_metrics_stats(response_name, measure_name, system_measure_list, stats_dict):
     system_measure_df = pd.DataFrame(system_measure_list)
 
+    system_order_dict = {"Gold": 1, "Templ": 2, "ED+CC": 3, "RBF-2020": 4, "Macro": 5}
+    system_measure_df["O"] = system_measure_df["System"].apply(lambda x: system_order_dict[x])
+    system_measure_df.sort_values(by="O", inplace=True)
+    system_measure_df.drop(columns=["O"], inplace=True)
+    original_results_df = pd.read_csv("results/original/results.csv")
+    original_results_df["O"] = original_results_df["System"].apply(lambda x: system_order_dict[x])
+    original_results_df.sort_values(by="O", inplace=True)
+    original_results_df.drop(columns=["O"], inplace=True)
+
+    summary_df = pd.DataFrame()
+    summary_df["System"] = system_measure_df["System"]
+    summary_df["Orig"] = original_results_df[measure_name]
+    summary_df["Rep"] = system_measure_df["Best-Worst Scale"]
+
     base_out_dir = "results/" + get_file_name(response_name)
 
     csv_dir = base_out_dir + "/csv/"
@@ -289,6 +303,15 @@ def report_metrics_stats(response_name, measure_name, system_measure_list, stats
     for out_dir in [csv_dir, latex_dir]:
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
+
+    summary_df.to_csv(csv_dir + get_file_name(measure_name) + "_summary.csv",
+                        float_format=get_float_formatter(),
+                        index=False,
+                        quoting=csv.QUOTE_NONNUMERIC)
+    summary_df.to_latex(latex_dir + get_file_name(measure_name) + "_summary.tex",
+                        float_format=get_float_formatter(),
+                        index=False,
+                        escape=True)
 
     system_measure_df.to_csv(csv_dir + get_file_name(measure_name) + ".csv",
                              float_format=get_float_formatter(),

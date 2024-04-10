@@ -42,6 +42,9 @@ def calculate_coefficient_of_variation(result_sets, range_start, range_end):
 
         precision_results = cv.get_precision_results(values)
 
+        for i in range(len(precision_results["values"])):
+            precision_results["values"][i] -= range_shift
+
         full_result_list.append(precision_results)
     return full_result_list
 
@@ -101,8 +104,11 @@ def report_2_way_reproducibility():
     cv_df = pd.DataFrame(cv_list)
 
     pearson_df.to_csv("results/comparative/pearson.csv", index=False)
+    pearson_df.to_latex("results/comparative/pearson.tex", index=False, float_format='%.2f', escape=True)
     spearman_df.to_csv("results/comparative/spearman.csv", index=False)
+    spearman_df.to_latex("results/comparative/spearman.tex", index=False, float_format='%.2f', escape=True)
     cv_df.to_csv("results/comparative/cv_2_way.csv", index=False)
+    cv_df.to_latex("results/comparative/cv_2_way.tex", index=False, float_format='%.2f', escape=True)
 
 
 def sort_by_systems_dict(df, system_to_order_dict):
@@ -156,6 +162,7 @@ def report_3_way_reproducibility():
     cv_df = pd.DataFrame(cv_list)
 
     cv_df.to_csv("results/comparative/cv_3_way.csv", index=False)
+    cv_df.to_latex("results/comparative/cv_3_way.tex", index=False, float_format='%.2f', escape=True)
 
 
 def main():
